@@ -39,6 +39,7 @@ if ( !isset( $wsb_redux ) && file_exists( dirname( __FILE__ ) . '/includes/redux
  */
 if ($wpscbl_options['enable-shortcodes-in-acf']){
 	add_filter('acf/format_value/type=textarea', 'do_shortcode');
+	add_filter('acf/format_value/type=text', 'do_shortcode');
 }
 
 /**
